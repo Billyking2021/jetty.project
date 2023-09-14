@@ -94,7 +94,7 @@
     <jnr-enxio.version>0.32.13</jnr-enxio.version>
     <jnr-ffi.version>2.2.12</jnr-ffi.version>
     <jnr-posix.version>3.1.15</jnr-posix.version>
-    <jnr-unixsocket.version>0.38.17</jnr-unixsocket.version>
+    <jnr-unixsocket.version>0.38.20</jnr-unixsocket.version>
     <jolokia.version>1.7.1</jolokia.version>
     <json-simple.version>1.1.1</json-simple.version>
     <json-smart.version>2.5.0</json-smart.version>
@@ -299,10 +299,10 @@
                   <version>[11,)</version>
                   <message>[ERROR] OLD JDK [${java.version}] in use. Jetty ${project.version} requires JDK 11 or newer</message>
                 </requireJavaVersion>
-                <versionTxtRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.VersionTxtRule" />
-                <versionOsgiRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireOsgiCompatibleVersionRule" />
-                <versionRedhatRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireRedhatCompatibleVersionRule" />
-                <versionDebianRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireDebianCompatibleVersionRule" />
+                <versionTxtRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.VersionTxtRule"/>
+                <versionOsgiRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireOsgiCompatibleVersionRule"/>
+                <versionRedhatRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireRedhatCompatibleVersionRule"/>
+                <versionDebianRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireDebianCompatibleVersionRule"/>
                 <requireUpperBoundDeps/>
               </rules>
             </configuration>
@@ -2274,7 +2274,7 @@
         <spotbugs.effort>Default</spotbugs.effort>
         <spotbugs.skip>false</spotbugs.skip>
         <spotbugs.onlyAnalyze>org.eclipse.jetty.*</spotbugs.onlyAnalyze>
-        <maven.repo.uri></maven.repo.uri>
+        <maven.repo.uri/>
       </properties>
       <modules>
         <module>javadoc</module>
